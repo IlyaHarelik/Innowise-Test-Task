@@ -3,5 +3,5 @@
     Innowise stuff
     @endsection
 @section('content')
-    <h3 align="center">Staff list<h3>
+    <h3 align="center">About project</h3>
     @endsection
