@@ -4,9 +4,9 @@
     </a>
 
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-5 py-2 text-dark text-decoration-none" href="/">Home</a>
-        <a class="me-5 py-2 text-dark text-decoration-none" href="/stafflist">Staff list</a>
-        <a class="me-5 py-2 text-dark text-decoration-none" href="/newemployee">Add new employee</a>
+        <a class="me-5 py-2 text-dark text-decoration-none" href="{{route ('home') }}">Home</a>
+        <a class="me-5 py-2 text-dark text-decoration-none" href="{{route ('stafflist')}}">Staff list</a>
+        <a class="me-5 py-2 text-dark text-decoration-none" href="{{route ('newemployee')}}">Add new employee</a>
     </nav>
     </div>
 
