@@ -11,6 +11,7 @@
 </head>
 <body>
 @yield('content')
+
 @include('inc.footer')
 </body>
 </html>

@@ -28,7 +28,7 @@
         </div>
         <div class="for-group">
             <label for="name">Date of birth</label>
-            <input type="date" name="birth" placeholder="Date of birth" id="birth" class="form-control">
+            <input type="date" name="birthday" placeholder="Date of birth" id="birthday" class="form-control">
         </div>
         <button type="submit" class="btn btn-success">Accept</button>
     </form>
