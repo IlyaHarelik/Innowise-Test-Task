@@ -3,7 +3,7 @@
 @section('content')
     <h1>Form for adding new employees</h1>
 
-    @if($errors ->any())
+    @if($errors -> any())
         <div class="alert alert-danger">
             <ul>
                 @foreach($errors->all() as $error)

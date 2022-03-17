@@ -9,7 +9,8 @@ class NewEmpController extends Controller {
         $validation = $req ->validate([
             'firstName' => 'required|min:2|max:20',
             'lastName' => 'required|min:2|max:20',
-            'salary' => 'required|min:50|max:20000'
+            'salary' => 'required|numeric|between:50,20000',
+            'birth' => 'required|before:tomorrow'
         ]);
     }
 }
