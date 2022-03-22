@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Stafflist;
 
-class NewEmpController extends Controller {
+class NewEmpController extends Controller
+{
     public function accept(Request $req)
     {
         $validation = $req->validate([
