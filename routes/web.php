@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 })->name('home');
-Route::get('/stafflist', function () {
+/*Route::get('/stafflist', function () {
     return view('stafflist');
-})->name('stafflist');
+})->name('stafflist');*/
 Route::get('/newemployee', function () {
     return view('newemployee');
 })->name('newemployee');
+Route::get('/stafflist', 'NewEmpController@allData')->name('stafflist');
 Route::post('/newemployee/accepted', 'NewEmpController@accept')->name('newaccepted');

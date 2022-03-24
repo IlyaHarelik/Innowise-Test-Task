@@ -27,9 +27,9 @@
             <input type="number" name="salary" placeholder="Salary" id="salary" class="form-control">
         </div>
         <div class="form-group">
-            <label for="name">Date of birth</label>
-            <input type="date" name="birthday" placeholder="Date of birth" id="birthday" class="form-control">
+            <label for="name">Birthday</label>
+            <input type="date" name="birthday" placeholder="Birthday" id="birthday" class="form-control">
         </div>
         <button type="submit" class="btn btn-primary">Accept</button>
     </form>
-    @endsection
+@endsection

@@ -22,6 +22,11 @@ class NewEmpController extends Controller
         $stafflists->birthday = $req->input('birthday');
         $stafflists->save();
         return redirect()->route('stafflist')->with('success', 'New employee was added to database');
-}
+    }
 
+    public function allData()
+    {
+        $stafflist = new Stafflist;
+        return view('stafflist', ['data' => Stafflist::all()]);
+    }
 }
