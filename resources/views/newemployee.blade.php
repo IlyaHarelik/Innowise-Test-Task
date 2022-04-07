@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('title-block')
+    New employee
+@endsection
 @section('content')
     <h1>Form for adding new employees</h1>
 
@@ -16,19 +18,19 @@
         @csrf
         <div class="form-group">
             <label for="name">First name</label>
-            <input type="text" name="firstName" placeholder="First name" id="firstName" class="form-control">
+            <input type="text" name="firstName" placeholder="First name" id="firstName" class="form-control" value="{{old('firstName')}}">
         </div>
         <div class="form-group">
             <label for="name">Last name</label>
-            <input type="text" name="lastName" placeholder="Last name" id="lastName" class="form-control">
+            <input type="text" name="lastName" placeholder="Last name" id="lastName" class="form-control" value="{{old('lastName')}}">
         </div>
         <div class="form-group">
             <label for="name">Salary</label>
-            <input type="number" name="salary" placeholder="Salary" id="salary" class="form-control">
+            <input type="number" name="salary" placeholder="Salary" id="salary" class="form-control" value="{{old('salary')}}">
         </div>
         <div class="form-group">
             <label for="name">Birthday</label>
-            <input type="date" name="birthday" placeholder="Birthday" id="birthday" class="form-control">
+            <input type="date" name="birthday" placeholder="Birthday" id="birthday" class="form-control" value="{{old('birthday')}}">
         </div>
         <button type="submit" class="btn btn-primary">Accept</button>
     </form>
